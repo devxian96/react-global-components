@@ -5,17 +5,21 @@
   "keywords": [
     "react",
     "reactjs",
-    "react-global-components"
+    "react-global-components",
+    "exNext",
+    "commonJS"
   ],
   "type": "module",
-  "main": "build/index.js",
-  "module": "build/index.es.js",
-  "jsnext:main": "build/index.es.js",
+  "main": "lib/index.js",
+  "unpkg": "dist/index.js",
+  "module": "es/index.js",
+  "types": "types/index.d.ts",
   "repository": "https://github.com/devxian96/react-global-components",
   "author": "Seokhyeon Jang",
   "license": "MIT",
   "private": false,
   "scripts": {
+    "clean": "rimraf lib dist es coverage types",
     "test": "jest",
     "build": "rollup -c"
   },
@@ -27,8 +31,12 @@
     "testEnvironment": "node"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-typescript": "^7.13.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-replace": "^2.4.1",
     "@types/jest": "^26.0.20",
     "@types/lodash": "^4.14.168",
     "@types/node": "^14.14.34",
@@ -47,11 +55,13 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
     "ts-jest": "^26.5.3",
     "typescript": "^4.2.3"
   },
   "dependencies": {
+    "@babel/runtime": "^7.13.10",
     "require-context": "^1.1.0"
   }
 }

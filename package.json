@@ -1,6 +1,6 @@
 {
   "name": "react-global-components",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Library that enables react to implement global components.",
   "keywords": [
     "react",
@@ -21,7 +21,9 @@
   "scripts": {
     "clean": "rimraf lib dist es coverage types",
     "test": "jest",
-    "build": "rollup -c"
+    "check-types": "tsc --noEmit",
+    "build": "rollup -c",
+    "deploy": "yarn clean && yarn check-types && yarn test && yarn build && yarn publish"
   },
   "peerDependencies": {
     "react": "^16.0.0",
@@ -63,5 +65,14 @@
   "dependencies": {
     "@babel/runtime": "^7.13.10",
     "require-context": "^1.1.0"
-  }
+  },
+  "npmName": "react-global-components",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }

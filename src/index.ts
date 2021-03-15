@@ -1,12 +1,12 @@
-const requireContext = require("require-context");
-
 // Import Global
 function importGlobal(requireContext: __WebpackModuleApi.RequireContext): void {
   requireContext.keys().map((key: string) => {
-    global[key.replace(".js", "")] = requireContext(key).default.default;
+    window[key.replace(".js", "").replace("./", "")] = requireContext(
+      key
+    ).default;
   });
 }
 
-export default function ReactGlobalComponents(): void {
-  importGlobal(requireContext("../../plugins", true, /\.js$/));
+export default function ReactGlobalComponents(path: string): void {
+  importGlobal(require.context(path, true, /\.js$/));
 }

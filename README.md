@@ -45,6 +45,7 @@ Now enjoy coding.
 - MINOR version when you add functionality in a backwards-compatible manner, and
 - PATCH version when you make backwards-compatible bug fixes.
 > MAJOR.MINOR.PATCH
+<br/>
 > 0.0.18
 
 ## Examples

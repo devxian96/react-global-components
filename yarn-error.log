@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\kkum9\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add -D @types/babel-plugin-require-context-hook
+  C:\Program Files\nodejs\node.exe C:\Users\kkum9\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add -D @types/require-context
 
 PATH: 
   C:\Program Files\AdoptOpenJDK\jdk-8.0.282.8-hotspot\bin;C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\influxdb-1.8.1-1;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\PuTTY\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Scoop\shims;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\kkum9\AppData\Local\Microsoft\WindowsApps;C:\Users\kkum9\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\kkum9\AppData\Local\GitHubDesktop\bin;C:\Users\kkum9\AppData\Roaming\npm;C:\Program Files\Bandizip\;C:\influxdb-1.8.1-1;C:\Users\kkum9\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.8;C:\Program Files\MongoDB\Server\4.4\bin;C:\Users\kkum9\.dotnet\tools;C:\Users\kkum9\AppData\Local\Programs\Python\Python38-32;C:\Users\kkum9\AppData\Local\Programs\Python\Python38-32\Scripts;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.5\bin;;C:\Users\kkum9\AppData\Local\Microsoft\WindowsApps
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fbabel-plugin-require-context-hook: Not found
+  Error: https://registry.yarnpkg.com/@types%2frequire-context: Not found
       at Request.params.callback [as _callback] (C:\Users\kkum9\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
       at Request.self.callback (C:\Users\kkum9\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
       at Request.emit (events.js:315:20)
@@ -29,7 +29,7 @@ Trace:
 npm manifest: 
   {
     "name": "react-global-components",
-    "version": "0.0.10",
+    "version": "0.0.14",
     "description": "Library that enables react to implement global components.",
     "keywords": [
       "react",
@@ -62,6 +62,7 @@ npm manifest:
       "testEnvironment": "jsdom"
     },
     "devDependencies": {
+      "@babel/core": "^7.13.10",
       "@babel/plugin-transform-runtime": "^7.13.10",
       "@babel/preset-env": "^7.13.10",
       "@babel/preset-typescript": "^7.13.0",
@@ -75,12 +76,13 @@ npm manifest:
       "@types/react-dom": "^17.0.2",
       "@types/react-test-renderer": "^17.0.1",
       "@types/webpack-env": "^1.16.0",
+      "babel-jest": "^26.6.3",
       "jest": "^26.6.3",
       "jest-environment-jsdom": "^26.6.2",
       "lodash": "^4.17.21",
       "react": "^17.0.1",
       "react-dom": "^17.0.1",
-      "react-global-components": "^0.0.6",
+      "react-global-components": "^0.0.10",
       "react-scripts-ts": "^3.1.0",
       "react-test-renderer": "^17.0.1",
       "rollup": "^2.41.2",
@@ -94,7 +96,7 @@ npm manifest:
     },
     "dependencies": {
       "@babel/runtime": "^7.13.10",
-      "babel-plugin-require-context-hook": "^1.0.0"
+      "require-context": "^1.1.0"
     },
     "npmName": "react-global-components",
     "npmFileMap": [
@@ -127,7 +129,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.13.8.tgz#5b783b9808f15cef71547f1b691f34f8ff6003a6"
     integrity sha512-EaI33z19T4qN3xLXsGf48M2cDqa6ei9tPZlfLdb2HC+e/cFtREiRd8hdSqDbwdLB0/+gLwqJmCYASH0z2bUdog==
   
-  "@babel/core@^7.1.0", "@babel/core@^7.7.5":
+  "@babel/core@^7.1.0", "@babel/core@^7.13.10", "@babel/core@^7.7.5":
     version "7.13.10"
     resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.13.10.tgz#07de050bbd8193fcd8a3c27918c0890613a94559"
     integrity sha512-bfIYcT0BdKeAZrovpMqX2Mx5NrgAckGbwT982AkdS5GNfn3KMGiprlBAtmBcFZRUmpaufS6WZFP8trvx8ptFDw==
@@ -9261,13 +9263,13 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.1.tgz#417addb0814a90f3a7082eacba7cee588d00da89"
     integrity sha512-xXUbDAZkU08aAkjtUvldqbvI04ogv+a1XdHxvYuHPYKIVk/42BIOD0zSKTHAWV4+gDy3yGm283z2072rA2gdtw==
   
-  react-global-components@^0.0.6:
-    version "0.0.6"
-    resolved "https://registry.yarnpkg.com/react-global-components/-/react-global-components-0.0.6.tgz#00847f2e03acab42a87df1463711048a4edd58d0"
-    integrity sha512-SDVoRf17pzj5eID9ECyLzplZp7ATB5cYXN0ZoCNBR5lsunfYxuoIz0TmByalMtMf4dRM4aAaQWZeCmtD3r5gbA==
+  react-global-components@^0.0.10:
+    version "0.0.10"
+    resolved "https://registry.yarnpkg.com/react-global-components/-/react-global-components-0.0.10.tgz#e20a0589bf83c8a2b77b9f85d4fb8af62fcc17d7"
+    integrity sha512-fH9P9qx1sZbk/f96N6/m8AgDsZomAOtpV94i3mauqCEsgWRHYTG/FjNUGJz73IuedWAEKZbw/6OqBTNXFxBDGA==
     dependencies:
       "@babel/runtime" "^7.13.10"
-      require-context "^1.1.0"
+      babel-plugin-require-context-hook "^1.0.0"
   
   "react-is@^16.12.0 || ^17.0.0", react-is@^17.0.1:
     version "17.0.1"

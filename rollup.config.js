@@ -67,7 +67,6 @@ export default [
             {
               version: babelRuntimeVersion,
               useESModules: true,
-              requireContextHook: false,
             },
           ],
         ],

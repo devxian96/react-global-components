@@ -1,5 +1,3 @@
-import * as path from "path";
-
 // Import Global
 function importGlobal(requireContext: __WebpackModuleApi.RequireContext): void {
   requireContext.keys().map((key: string) => {
@@ -9,6 +7,6 @@ function importGlobal(requireContext: __WebpackModuleApi.RequireContext): void {
   });
 }
 
-export default function ReactGlobalComponents(setPath: string): void {
-  importGlobal(require.context(path.join(__dirname, setPath), true, /\.js$/));
+export default function ReactGlobalComponents(): void {
+  importGlobal(require.context("../../../plugins", true, /\.js$/));
 }

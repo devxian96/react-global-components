@@ -44,9 +44,9 @@ Now enjoy coding.
 - MAJOR version when you make incompatible API changes,
 - MINOR version when you add functionality in a backwards-compatible manner, and
 - PATCH version when you make backwards-compatible bug fixes.
-> MAJOR.MINOR.PATCH
-<br/>
-> 0.0.18
+
+v0.0.18<br/>
+18th patched.
 
 ## Examples
 Not prepare yet.

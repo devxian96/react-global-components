@@ -82,6 +82,7 @@ export default [
       }),
       replace({
         "process.env.NODE_ENV": JSON.stringify("production"),
+        preventAssignment: true,
       }),
       typescript({ tsconfigOverride: noDeclarationFiles }),
       babel({
@@ -119,6 +120,7 @@ export default [
       }),
       replace({
         "process.env.NODE_ENV": JSON.stringify("development"),
+        preventAssignment: true,
       }),
     ],
   },
@@ -143,6 +145,7 @@ export default [
       }),
       replace({
         "process.env.NODE_ENV": JSON.stringify("production"),
+        preventAssignment: true,
       }),
       terser({
         compress: {

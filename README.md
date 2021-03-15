@@ -1,4 +1,11 @@
 # react-global-components
+![npm](https://img.shields.io/npm/dm/react-global-components?style=for-the-badge)
+![npm](https://img.shields.io/npm/v/react-global-components?style=for-the-badge)
+[![GitHub stars](https://img.shields.io/github/stars/devxian96/react-global-components?style=for-the-badge)](https://github.com/devxian96/react-global-components/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/devxian96/react-global-components?style=for-the-badge)](https://github.com/devxian96/react-global-components/network)
+[![GitHub issues](https://img.shields.io/github/issues/devxian96/react-global-components?style=for-the-badge)](https://github.com/devxian96/react-global-components/issues)
+[![GitHub issues](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)](https://github.com/devxian96/react-global-components/blob/master/LICENSE)
+
 > The library that enables react to implement global components.
 ## Npm / Yarn
 ```

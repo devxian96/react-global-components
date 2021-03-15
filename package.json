@@ -16,7 +16,6 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "ts-node src",
     "test": "jest",
     "build": "rollup -c"
   },

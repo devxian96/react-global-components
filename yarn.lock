@@ -14,7 +14,7 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.13.8.tgz#5b783b9808f15cef71547f1b691f34f8ff6003a6"
   integrity sha512-EaI33z19T4qN3xLXsGf48M2cDqa6ei9tPZlfLdb2HC+e/cFtREiRd8hdSqDbwdLB0/+gLwqJmCYASH0z2bUdog==
 
-"@babel/core@^7.1.0", "@babel/core@^7.7.5":
+"@babel/core@^7.1.0", "@babel/core@^7.13.10", "@babel/core@^7.7.5":
   version "7.13.10"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.13.10.tgz#07de050bbd8193fcd8a3c27918c0890613a94559"
   integrity sha512-bfIYcT0BdKeAZrovpMqX2Mx5NrgAckGbwT982AkdS5GNfn3KMGiprlBAtmBcFZRUmpaufS6WZFP8trvx8ptFDw==
@@ -7887,13 +7887,6 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
-node-dir@^0.1.17:
-  version "0.1.17"
-  resolved "https://registry.yarnpkg.com/node-dir/-/node-dir-0.1.17.tgz#5f5665d93351335caabef8f1c554516cf5f1e4e5"
-  integrity sha1-X1Zl2TNRM1yqvvjxxVRRbPXx5OU=
-  dependencies:
-    minimatch "^3.0.2"
-
 node-forge@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.10.0.tgz#32dea2afb3e9926f02ee5ce8794902691a676bf3"
@@ -9148,13 +9141,13 @@ react-error-overlay@^4.0.1:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.1.tgz#417addb0814a90f3a7082eacba7cee588d00da89"
   integrity sha512-xXUbDAZkU08aAkjtUvldqbvI04ogv+a1XdHxvYuHPYKIVk/42BIOD0zSKTHAWV4+gDy3yGm283z2072rA2gdtw==
 
-react-global-components@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/react-global-components/-/react-global-components-0.0.6.tgz#00847f2e03acab42a87df1463711048a4edd58d0"
-  integrity sha512-SDVoRf17pzj5eID9ECyLzplZp7ATB5cYXN0ZoCNBR5lsunfYxuoIz0TmByalMtMf4dRM4aAaQWZeCmtD3r5gbA==
+react-global-components@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/react-global-components/-/react-global-components-0.0.10.tgz#e20a0589bf83c8a2b77b9f85d4fb8af62fcc17d7"
+  integrity sha512-fH9P9qx1sZbk/f96N6/m8AgDsZomAOtpV94i3mauqCEsgWRHYTG/FjNUGJz73IuedWAEKZbw/6OqBTNXFxBDGA==
   dependencies:
     "@babel/runtime" "^7.13.10"
-    require-context "^1.1.0"
+    babel-plugin-require-context-hook "^1.0.0"
 
 "react-is@^16.12.0 || ^17.0.0", react-is@^17.0.1:
   version "17.0.1"
@@ -9554,13 +9547,6 @@ request@^2.79.0, request@^2.87.0, request@^2.88.2:
     tough-cookie "~2.5.0"
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
-
-require-context@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/require-context/-/require-context-1.1.0.tgz#f77e60dddb0a296946e6915bf580c73dbe75ab4d"
-  integrity sha512-nfYSy3Q9W3W1fCo0nief19bDq216IGY9+wOUsmCWAJ5jssyak0r110rvqIj4KJYoUYDxLDaeA66ONOYy4PJEUw==
-  dependencies:
-    node-dir "^0.1.17"
 
 require-directory@^2.1.1:
   version "2.1.1"

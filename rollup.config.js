@@ -64,7 +64,11 @@ export default [
         plugins: [
           [
             "@babel/plugin-transform-runtime",
-            { version: babelRuntimeVersion, useESModules: true },
+            {
+              version: babelRuntimeVersion,
+              useESModules: true,
+              requireContextHook: false,
+            },
           ],
         ],
         babelHelpers: "runtime",

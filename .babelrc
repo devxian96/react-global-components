@@ -1,4 +1,8 @@
 {
   "presets": ["@babel/preset-typescript", "@babel/preset-env"],
-  "plugins": ["require-context-hook"]
+  "env": {
+    "test": {
+      "plugins": ["require-context-hook"]
+    }
+  }
 }

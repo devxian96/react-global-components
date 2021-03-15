@@ -36,9 +36,7 @@ export default Index() {
     const func = Card();
     console.log(func);
 
-    return {
-        <Card />
-    }
+    return (<Card />);
 }
 ```
 This library support component, function, variable.<br/>

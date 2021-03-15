@@ -4,3 +4,4 @@ dist/
 es/
 coverage/
 types/
+example/node_modules/

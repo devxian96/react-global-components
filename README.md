@@ -40,5 +40,12 @@ Now enjoy coding.
 - Can make Global Components.
 - Focus on bundle size and stability.
 
+## Update
+- MAJOR version when you make incompatible API changes,
+- MINOR version when you add functionality in a backwards-compatible manner, and
+- PATCH version when you make backwards-compatible bug fixes.
+> MAJOR.MINOR.PATCH
+> 0.0.18
+
 ## Examples
 Not prepare yet.

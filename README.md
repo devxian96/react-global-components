@@ -28,7 +28,7 @@ ReactGlobalComponents();
 import { Card } from 'card-components';
 export default Card;
 ```
-**Important!!**<br/>
+**Important!!**   
 You can call it by file name. Reserved words must not be used.
 ```javascript
 // Every Where Can Call Tt without import
@@ -39,7 +39,7 @@ export default Index() {
     return (<Card />);
 }
 ```
-This library support component, function, variable.<br/>
+This library support component, function, variable.   
 Now enjoy coding.
 ## Features
 - Can make Global Components.
@@ -50,8 +50,13 @@ Now enjoy coding.
 - MINOR version when you add functionality in a backwards-compatible manner, and
 - PATCH version when you make backwards-compatible bug fixes.
 
-v0.0.18<br/>
-18th patched.
+> v0.0.18   
+> 18th patched.
+
+## Update Scheduled
+- Support jslint *(PATCH)*
+- Support edit basic root of the plugins folder. *(MINOR)*
 
 ## Examples
-Not prepare yet.
+This is [Example](https://github.com/devxian96/react-global-components-example) boilerplate code.   
+You can get better better way.

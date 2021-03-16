@@ -39,6 +39,13 @@ export default Index() {
     return (<Card />);
 }
 ```
+```json
+// .eslintrc
+{
+  "parser": "babel-eslint"
+}
+
+```
 This library support component, function, variable.   
 Now enjoy coding.
 ## Features
@@ -54,7 +61,6 @@ Now enjoy coding.
 > 18th patched.
 
 ## Update Scheduled
-- Support jslint *(PATCH)*
 - Support edit basic root of the plugins folder. *(MINOR)*
 
 ## Examples

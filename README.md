@@ -59,4 +59,4 @@ Now enjoy coding.
 
 ## Examples
 This is [Example](https://github.com/devxian96/react-global-components-example) boilerplate code.   
-You can get better better way.
+You can get better way.

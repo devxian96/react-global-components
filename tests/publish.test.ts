@@ -2,7 +2,7 @@
 import ReactGlobalComponents from "react-global-components";
 
 test("Publish Version Test", () => {
-  ReactGlobalComponents("../../../plugins");
+  ReactGlobalComponents("/plugins");
   // @ts-expect-error: Typescript can not read global variable
   expect(lodash.VERSION !== undefined).toBeTruthy();
 });

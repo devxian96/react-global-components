@@ -7,6 +7,6 @@ function importGlobal(requireContext: __WebpackModuleApi.RequireContext): void {
   });
 }
 
-export default function ReactGlobalComponents(): void {
-  importGlobal(require.context("../../../plugins", true, /\.js$/));
+export default function ReactGlobalComponents(path: String = "/plugins"): void {
+  importGlobal(require.context(`../../..${path}`, true, /\.js$/));
 }

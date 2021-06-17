@@ -1,6 +1,6 @@
 {
   "name": "react-global-components",
-  "version": "0.0.19",
+  "version": "0.1.19",
   "description": "The library that enables react to implement global components.",
   "keywords": [
     "react",

@@ -22,6 +22,11 @@ yarn add react-global-components
 // src/index.js or src/app.js
 import ReactGlobalComponents from 'react-global-components';
 ReactGlobalComponents();
+
+// OR
+
+import ReactGlobalComponents from 'react-global-components';
+ReactGlobalComponents('/plugins');
 ```
 ```javascript
 // plugins/Card.js
@@ -57,11 +62,16 @@ Now enjoy coding.
 - MINOR version when you add functionality in a backwards-compatible manner, and
 - PATCH version when you make backwards-compatible bug fixes.
 
-> v0.0.18   
+> example:)
+> v0.0.18 is   
 > 18th patched.
 
-## Update Scheduled
+## Updated New Version
 - Support edit basic root of the plugins folder. *(MINOR)*
+
+## Update Scheduled
+- Jest tests case more improve *(PATCH)*
+- Compress global import size *(PATCH)*
 
 ## Examples
 This is [Example](https://github.com/devxian96/react-global-components-example) boilerplate code.   

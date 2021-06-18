@@ -29,8 +29,6 @@ if (typeof require.context === 'undefined') {
 
     Module.keys = (): String[] => Object.keys(files);
 
-    console.log(typeof Module)
-
     return Module;
   };
 }

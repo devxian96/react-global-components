@@ -26,7 +26,7 @@ ReactGlobalComponents();
 // OR
 
 import ReactGlobalComponents from 'react-global-components';
-ReactGlobalComponents('/plugins');
+ReactGlobalComponents('../../../plugins');
 ```
 ```javascript
 // plugins/Card.js

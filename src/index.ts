@@ -44,6 +44,6 @@ function importGlobal(requireContext: any): void {
   });
 }
 
-export default function ReactGlobalComponents(path: String = "/plugins"): void {
+export default function ReactGlobalComponents(path: String = "../../../plugins"): void {
   importGlobal(require.context(`${require('path').resolve(__dirname)}/${path}`, true, /\.js$/));
 }

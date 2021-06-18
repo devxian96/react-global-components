@@ -55,7 +55,7 @@
     "lodash": "^4.17.21",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-global-components": "^0.1.20",
+    "react-global-components": "0.1.21",
     "react-scripts-ts": "^3.1.0",
     "react-test-renderer": "^17.0.1",
     "rollup": "^2.41.2",

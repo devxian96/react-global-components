@@ -1,20 +1,27 @@
-/*
-// @ts-expect-error: Not ready support typescript
+
 import ReactGlobalComponents from "react-global-components";
+import ReactGlobalComponentsLocal from "../src/index";
 
-test("Publish Version Test", () => {
+describe('Publish Version Test', (): void => {
+  test("lodash is undefined?", (): void => {
+    window.lodash = undefined
+    expect(lodash === undefined).toBeTruthy();
+  });
 
-  console.log(ReactGlobalComponents)
-  ReactGlobalComponents();
-  // @ts-expect-error: Typescript can not read global variable
-  expect(lodash.VERSION !== undefined).toBeTruthy();
+  test("Publish Version Test", (): void => {
+    ReactGlobalComponentsLocal('../plugins');
+    expect(lodash.VERSION !== undefined).toBeTruthy();
+  });
 });
-*/
 
-import ReactGlobalComponents from "../src/index";
+describe('Local Version Test', (): void => {
+  test("lodash is undefined?", (): void => {
+    window.lodash = undefined
+    expect(lodash === undefined).toBeTruthy();
+  });
 
-test("Publish Version Test", () => {
-  ReactGlobalComponents('../plugins');
-  // @ts-expect-error: Typescript can not read global variable
-  expect(lodash.VERSION !== undefined).toBeTruthy();
-});
+  test("Local Version Test", (): void => {
+    ReactGlobalComponentsLocal('../plugins');
+    expect(lodash.VERSION !== undefined).toBeTruthy();
+  });
+})

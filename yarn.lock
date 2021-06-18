@@ -2171,11 +2171,6 @@ babel-plugin-polyfill-regenerator@^0.2.2:
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.2.2"
 
-babel-plugin-require-context-hook@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-require-context-hook/-/babel-plugin-require-context-hook-1.0.0.tgz#3f0e7cce87c338f53639b948632fd4e73834632d"
-  integrity sha512-EMZD1563QUqLhzrqcThk759RhuNVX/ZJdrtGK6drwzgvnR+ARjWyXIHPbu+tUNaMGtPz/gQeAM2M6VUw2UiUeA==
-
 babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-async-functions/-/babel-plugin-syntax-async-functions-6.13.0.tgz#cad9cad1191b5ad634bf30ae0872391e0647be95"
@@ -9291,13 +9286,12 @@ react-error-overlay@^4.0.1:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.1.tgz#417addb0814a90f3a7082eacba7cee588d00da89"
   integrity sha512-xXUbDAZkU08aAkjtUvldqbvI04ogv+a1XdHxvYuHPYKIVk/42BIOD0zSKTHAWV4+gDy3yGm283z2072rA2gdtw==
 
-react-global-components@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/react-global-components/-/react-global-components-0.0.10.tgz#e20a0589bf83c8a2b77b9f85d4fb8af62fcc17d7"
-  integrity sha512-fH9P9qx1sZbk/f96N6/m8AgDsZomAOtpV94i3mauqCEsgWRHYTG/FjNUGJz73IuedWAEKZbw/6OqBTNXFxBDGA==
+react-global-components@^0.1.20:
+  version "0.1.20"
+  resolved "https://registry.yarnpkg.com/react-global-components/-/react-global-components-0.1.20.tgz#080791305798792abdb577f0502ad6f37586298e"
+  integrity sha512-WaNVsb4WaDBtoPWC/OXFPL8U1Hzh0m5VgxLn8e6xKeSAvmnmwB5C0i8hZPXABTa9t6TZ4HDYPd/2OBxShkYrsQ==
   dependencies:
     "@babel/runtime" "^7.13.10"
-    babel-plugin-require-context-hook "^1.0.0"
 
 "react-is@^16.12.0 || ^17.0.0", react-is@^17.0.1, react-is@^17.0.2:
   version "17.0.2"

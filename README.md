@@ -69,9 +69,10 @@ Now enjoy coding.
 ## Updated New Version
 - Support edit basic root of the plugins folder. *(MINOR)*
 - fix: pollyfill and find file name. *(PATCH)*
+- Jest tests case more improve *(PATCH)*
+- Typescript's type check more improve *(PATCH)*
 
 ## Update Scheduled
-- Jest tests case more improve *(PATCH)*
 - Compress global import size *(PATCH)*
 
 ## Examples

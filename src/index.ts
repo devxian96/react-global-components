@@ -2,12 +2,12 @@
 if (typeof require.context === 'undefined') {
   const fs = require('fs');
   const path = require('path');
-  require.context = (base: String = '.', scanSubDirectories: Boolean = false, regularExpression: RegExp = /\.js$/): any => {
+  require.context = (base: String = '.', scanSubDirectories: Boolean = false, regularExpression: RegExp = /\.js$/): Function => {
     const files: Object = {};
 
-    function readDirectory(directory: any) {
+    function readDirectory(directory: string) {
       fs.readdirSync(directory).forEach((file: String) => {
-        const fullPath: any = path.resolve(directory, file);
+        const fullPath: String = path.resolve(directory, file);
 
         if (fs.statSync(fullPath).isDirectory()) {
           if (scanSubDirectories) readDirectory(fullPath);
@@ -23,8 +23,7 @@ if (typeof require.context === 'undefined') {
 
     readDirectory(path.resolve(__dirname, base));
 
-    function Module(file: any): NodeRequire {
-
+    function Module(file: String): NodeRequire {
       return require(file);
     }
 

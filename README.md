@@ -68,6 +68,7 @@ Now enjoy coding.
 
 ## Updated New Version
 - Support edit basic root of the plugins folder. *(MINOR)*
+- fix: pollyfill and find file name. *(PATCH)*
 
 ## Update Scheduled
 - Jest tests case more improve *(PATCH)*
